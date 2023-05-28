@@ -9,6 +9,37 @@
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
 </head>
 
+<style>
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size:medium;
+    min-width: 400px;
+    width: 100%;
+  }
+  .content-table thead tr {
+    background-color: #5D87FF;
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  .content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+  }
+  .booot {
+    border-radius: 30px;
+    background-color: #ffffff;
+    border-color: #5D87FF;
+    color: #5D87FF;
+    padding: 10px 15px 10px;
+  }
+</style>
+
 <body>
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -30,26 +61,26 @@
           <ul id="sidebarnav">
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Home</span>
+              <span class="hide-menu">HOME</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./index.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">Dashboard</span>
+                <span class="hide-menu">My Account</span>
               </a>
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">UI COMPONENTS</span>
+              <span class="hide-menu">SERVICES</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
-                <span class="hide-menu">Buttons</span>
+                <span class="hide-menu">Account Activity</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -57,7 +88,7 @@
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
-                <span class="hide-menu">Alerts</span>
+                <span class="hide-menu">My Loans</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -65,7 +96,7 @@
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">Card</span>
+                <span class="hide-menu">Request</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -73,7 +104,7 @@
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Forms</span>
+                <span class="hide-menu">Reports</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -81,28 +112,7 @@
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
-                <span class="hide-menu">Typography</span>
-              </a>
-            </li>
-            
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">EXTRA</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-mood-happy"></i>
-                </span>
-                <span class="hide-menu">Icons</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Settings</span>
               </a>
             </li>
           </ul>
@@ -176,35 +186,65 @@
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title fw-semibold mb-4">Alerts</h5>
-              <div class="card mb-0">
-                <div class="card-body p-4">
-                  <div class="alert alert-primary" role="alert">
-                    A simple primary alert—check it out!
-                  </div>
-                  <div class="alert alert-secondary" role="alert">
-                    A simple secondary alert—check it out!
-                  </div>
-                  <div class="alert alert-success" role="alert">
-                    A simple success alert—check it out!
-                  </div>
-                  <div class="alert alert-danger" role="alert">
-                    A simple danger alert—check it out!
-                  </div>
-                  <div class="alert alert-warning" role="alert">
-                    A simple warning alert—check it out!
-                  </div>
-                  <div class="alert alert-info" role="alert">
-                    A simple info alert—check it out!
-                  </div>
-                  <div class="alert alert-light" role="alert">
-                    A simple light alert—check it out!
-                  </div>
-                  <div class="alert alert-dark" role="alert">
-                    A simple dark alert—check it out!
-                  </div>
-                </div>
-              </div>
+              <h3>Loans</h3>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Load ID</th>
+                    <th>Loan type</th>
+                    <th>Amount</th>
+                    <th>Next due date</th>
+                    <th>Installment amount</th>
+                    <th>Expiry date</th>
+                    <th>Status</th>
+                    <th>Borrow date</th>
+                    <th>Payment method</th>
+                    <th>Pay</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>02/10/2010</td>
+                    <td>Payment - Credit Card</td>
+                    <td>5,800.00</td>
+                    <td>5,400.00</td>
+                    <td>170,400.00</td>
+                    <td>02/10/2010</td>
+                    <td>Payment - Credit Card</td>
+                    <td>5,800.00</td>
+                    <td>5,400.00</td>
+                    <td><button class="booot">pay</button></td>
+                  </tr>
+                  <tr>
+                    <td>02/10/2010</td>
+                    <td>Payment - Credit Card</td>
+                    <td></td>
+                    <td>5,400.00</td>
+                    <td>170,400.00</td>
+                  </tr>
+                  <tr>
+                    <td>02/10/2010</td>
+                    <td>Payment - Credit Card</td>
+                    <td></td>
+                    <td>5,400.00</td>
+                    <td>170,400.00</td>
+                  </tr>
+                  <tr>
+                    <td>02/10/2010</td>
+                    <td>Payment - Credit Card</td>
+                    <td></td>
+                    <td>5,400.00</td>
+                    <td>170,400.00</td>
+                  </tr>
+                  <tr>
+                    <td>02/10/2010</td>
+                    <td>Payment - Credit Card</td>
+                    <td></td>
+                    <td>5,400.00</td>
+                    <td>170,400.00</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

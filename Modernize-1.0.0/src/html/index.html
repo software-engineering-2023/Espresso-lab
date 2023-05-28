@@ -49,6 +49,8 @@
   <title>Modernize Free</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -91,7 +93,7 @@
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
-                <span class="hide-menu">Buttons</span>
+                <span class="hide-menu">Account Activity</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -99,7 +101,7 @@
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
-                <span class="hide-menu">Alerts</span>
+                <span class="hide-menu">My Loans</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -107,7 +109,7 @@
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">Card</span>
+                <span class="hide-menu">Request</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -115,7 +117,7 @@
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Forms</span>
+                <span class="hide-menu">Reports</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -123,28 +125,7 @@
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
-                <span class="hide-menu">Typography</span>
-              </a>
-            </li>
-            
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">EXTRA</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-mood-happy"></i>
-                </span>
-                <span class="hide-menu">Icons</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Settings</span>
               </a>
             </li>
           </ul>
@@ -160,19 +141,16 @@
       <!--  Header Start -->
       <header class="app-header">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <ul class="navbar-nav">
-            <li class="nav-item d-block d-xl-none">
-              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
-                <i class="ti ti-menu-2"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
-            </li>
-          </ul>
+          <div class="container">
+          <div class="dropdown mt-5">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="ti ti-bell-ringing"></i></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Notification888888888888888888888</a>
+              <a class="dropdown-item" href="#">Notification 2</a>
+              <a class="dropdown-item" href="#">Notification 3</a>
+            </div>
+          </div>
+        </div>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
             
@@ -210,10 +188,11 @@
           <div class="col-lg-8 d-flex align-items-strech">
             <div class="card w-100">
               <div class="card-body">
-                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
-                  <div class="mb-3 mb-sm-0">
+                <div class="d-md-flex d-block align-items-center justify-content-between mb-9">
+                  <span class="">
                     <h5 class="card-title fw-semibold">Reminders</h5>
-                  </div>
+                    <img class="reminderll" width="600px" src="../assets/images/Reminder list.png" alt="Reminderlist">
+                  </span>
                   <!-- <img src="../assets/images/reminders.png" alt="" width="100" height="100"> -->
                   <!-- add reminders  -->
                 </div>
@@ -230,23 +209,6 @@
                     <div class="row align-items-center">
                       <div class="col-8">
                         <h4 class="fw-semibold mb-3">$36,358</h4>
-                        <div class="d-flex align-items-center mb-3">
-                          <span
-                            class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-up-left text-success"></i>
-                          </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                          <p class="fs-3 mb-0">last year</p>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <div class="me-4">
-                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">2023</span>
-                          </div>
-                          <div>
-                            <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">2023</span>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -261,14 +223,6 @@
                       <div class="col-8">
                         <h5 class="card-title mb-9 fw-semibold"> Credit Balance </h5>
                         <h4 class="fw-semibold mb-3">$6,820</h4>
-                        <div class="d-flex align-items-center pb-1">
-                          <span
-                            class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-down-right text-danger"></i>
-                          </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                          <p class="fs-3 mb-0">last year</p>
-                        </div>
                       </div>
                       <div class="col-4">
                         <div class="d-flex justify-content-end">
@@ -362,7 +316,7 @@
                 <div class="image-container">
                   <div class="image-box">
                     <a href="javascript:void(0)">
-                      <img src="../assets/images/openAccount.jpg" alt="Image 1">
+                      <img src="../assets/images/openAccount.png" alt="Image 1">
                     </a>
                     <p>
                       <a href="javascript:void(0)">Open New Account</a>
@@ -370,7 +324,7 @@
                   </div>
                   <div class="image-box">
                     <a href="javascript:void(0)">
-                      <img src="../assets/images/creditCard.jpeg" alt="Image 2">
+                      <img src="../assets/images/creditCard.png" alt="Image 2">
                     </a>
                     <p>
                       <a href="javascript:void(0)">Pay Your Credit</a>
@@ -428,6 +382,25 @@
   <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../assets/js/dashboard.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function myFunction(){
+      document.getElementById("myDropdown").classList.toggle("show");
+      window.onclick = function(event) {
+        if(!event.target.matches('.dropbtnn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-contentt");
+          var i;
+          for (i=0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
