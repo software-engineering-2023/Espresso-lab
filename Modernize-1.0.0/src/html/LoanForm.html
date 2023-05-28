@@ -59,7 +59,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
+          <a href="./My Account.html" class="text-nowrap logo-img">
             <h2> BOONIE BANK </h2>
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -74,7 +74,8 @@
               <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+              <a class="sidebar-link" href="./My Account
+              .html" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
@@ -86,7 +87,7 @@
               <span class="hide-menu">UI COMPONENTS</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+              <a class="sidebar-link" href="./AccountActivity.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
@@ -94,7 +95,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a class="sidebar-link" href="./MyLoans.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
@@ -102,7 +103,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+              <a class="sidebar-link" href="./Request.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
@@ -110,7 +111,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+              <a class="sidebar-link" href="./Reports.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
@@ -118,7 +119,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+              <a class="sidebar-link" href="./Settings.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
@@ -147,17 +148,6 @@
               </a>
             </li>
           </ul>
-          <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
-            <div class="d-flex">
-              <div class="unlimited-access-title me-3">
-                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
-                <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank" class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
-              </div>
-              <div class="unlimited-access-img">
-                <img src="../assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -196,7 +186,7 @@
                       <i class="ti ti-list-check fs-6"></i>
                       <p class="mb-0 fs-3">My Task</p>
                     </a>
-                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                    <a href="../html/login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
               </li>
@@ -210,8 +200,8 @@
           <div class="card">
             <div class="card-body">
   <div class="container">
-    <h1>Credit Card Issue Request Form</h1>
-    <form action="submit_credit_card_request.php" method="POST" enctype="multipart/form-data">
+    <h1>Loan Application Form</h1>
+    <form action="submit_loan_application.php" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -221,23 +211,19 @@
         <input type="email" id="email" name="email" required>
       </div>
       <div class="form-group">
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone" required>
+        <label for="amount">Loan Amount:</label>
+        <input type="number" id="amount" name="amount" required>
       </div>
       <div class="form-group">
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" required></textarea>
-      </div>
-      <div class="form-group">
-        <label for="credit-limit">Credit Limit:</label>
-        <input type="number" id="credit-limit" name="credit-limit" required>
+        <label for="purpose">Loan Purpose:</label>
+        <textarea id="purpose" name="purpose" required></textarea>
       </div>
       <div class="form-group">
         <label for="pdf">Attach PDF:</label>
         <input type="file" id="pdf" name="pdf" accept=".pdf" required>
       </div>
       <div class="form-group">
-        <input type="submit" value="Submit Request">
+        <input type="submit" value="Submit Application">
       </div>
     </form>
   </div>

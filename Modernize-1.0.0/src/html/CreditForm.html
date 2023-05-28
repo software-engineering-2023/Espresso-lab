@@ -4,42 +4,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Banking</title>
+  <title>Modernize Free</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
 </head>
 
 <style>
-  .content-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size:medium;
-    min-width: 400px;
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="number"] {
     width: 100%;
+    padding: 5px;
   }
-  .content-table thead tr {
-    background-color: #5D87FF;
-    color: #000000;
-    text-align: left;
-    font-weight: bold;
-    border-radius: 8px;
+
+  .form-group textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
   }
-  .content-table th,
-  .content-table td {
-    padding: 12px 15px;
+
+  .form-group input[type="file"] {
+    padding: 5px;
   }
-  .content-table tbody tr{
-    border-bottom: 1px solid #dddddd;
-  }
-  .booot {
-    border-radius: 30px;
-    background-color: #ffffff;
-    border-color: #5D87FF;
-    color: #5D87FF;
-    padding: 10px 15px 10px;
+
+  .form-group input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
   }
 </style>
-
 <body>
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -49,8 +59,8 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
-          <h2> BOONIE BANK </h2>
+          <a href="./My Account.html" class="text-nowrap logo-img">
+            <h2> BOONIE BANK </h2>
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -61,10 +71,10 @@
           <ul id="sidebarnav">
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">HOME</span>
+              <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+              <a class="sidebar-link" href="./My Account.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
@@ -73,60 +83,70 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">SERVICES</span>
+              <span class="hide-menu">UI COMPONENTS</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+              <a class="sidebar-link" href="./AccountActivity.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
-                <span class="hide-menu">Account Activity</span>
+                <span class="hide-menu">Buttons</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a class="sidebar-link" href="./MyLoans.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
-                <span class="hide-menu">My Loans</span>
+                <span class="hide-menu">Alerts</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+              <a class="sidebar-link" href="./Request.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">Request</span>
+                <span class="hide-menu">Card</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+              <a class="sidebar-link" href="./Reports.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Reports</span>
+                <span class="hide-menu">Forms</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+              <a class="sidebar-link" href="./Settings.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
-                <span class="hide-menu">Settings</span>
+                <span class="hide-menu">Typography</span>
+              </a>
+            </li>
+            
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">EXTRA</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-mood-happy"></i>
+                </span>
+                <span class="hide-menu">Icons</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+                <span class="hide-menu">Sample Page</span>
               </a>
             </li>
           </ul>
-          <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
-            <div class="d-flex">
-              <div class="unlimited-access-title me-3">
-                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
-                <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank" class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
-              </div>
-              <div class="unlimited-access-img">
-                <img src="../assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -143,21 +163,13 @@
               <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
                 <i class="ti ti-menu-2"></i>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
-            </li>
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                  <img src="../assets/images/profile/user-1.png" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -173,7 +185,7 @@
                       <i class="ti ti-list-check fs-6"></i>
                       <p class="mb-0 fs-3">My Task</p>
                     </a>
-                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                    <a href="../html/login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
               </li>
@@ -186,65 +198,38 @@
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <h3>Loans</h3>
-              <table class="content-table">
-                <thead>
-                  <tr>
-                    <th>Load ID</th>
-                    <th>Loan type</th>
-                    <th>Amount</th>
-                    <th>Next due date</th>
-                    <th>Installment amount</th>
-                    <th>Expiry date</th>
-                    <th>Status</th>
-                    <th>Borrow date</th>
-                    <th>Payment method</th>
-                    <th>Pay</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>02/10/2010</td>
-                    <td>Payment - Credit Card</td>
-                    <td>5,800.00</td>
-                    <td>5,400.00</td>
-                    <td>170,400.00</td>
-                    <td>02/10/2010</td>
-                    <td>Payment - Credit Card</td>
-                    <td>5,800.00</td>
-                    <td>5,400.00</td>
-                    <td><button class="booot">pay</button></td>
-                  </tr>
-                  <tr>
-                    <td>02/10/2010</td>
-                    <td>Payment - Credit Card</td>
-                    <td></td>
-                    <td>5,400.00</td>
-                    <td>170,400.00</td>
-                  </tr>
-                  <tr>
-                    <td>02/10/2010</td>
-                    <td>Payment - Credit Card</td>
-                    <td></td>
-                    <td>5,400.00</td>
-                    <td>170,400.00</td>
-                  </tr>
-                  <tr>
-                    <td>02/10/2010</td>
-                    <td>Payment - Credit Card</td>
-                    <td></td>
-                    <td>5,400.00</td>
-                    <td>170,400.00</td>
-                  </tr>
-                  <tr>
-                    <td>02/10/2010</td>
-                    <td>Payment - Credit Card</td>
-                    <td></td>
-                    <td>5,400.00</td>
-                    <td>170,400.00</td>
-                  </tr>
-                </tbody>
-              </table>
+  <div class="container">
+    <h1>Credit Card Issue Request Form</h1>
+    <form action="submit_credit_card_request.php" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="credit-limit">Credit Limit:</label>
+        <input type="number" id="credit-limit" name="credit-limit" required>
+      </div>
+      <div class="form-group">
+        <label for="pdf">Attach PDF:</label>
+        <input type="file" id="pdf" name="pdf" accept=".pdf" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit Request">
+      </div>
+    </form>
+  </div>
             </div>
           </div>
         </div>

@@ -15,18 +15,33 @@
          <form>
             <div class="field">
                <div class="fas fa-envelope"></div>
-               <input type="text" placeholder="Username">
+               <input type="text" id = "username" placeholder="Username">
             </div>
             <div class="field">
                <div class="fas fa-lock"></div>
-               <input type="password" placeholder="Password">
+               <input type="password" id = "password" placeholder="Password">
             </div>
-            <button>LOGIN</button>
+            <button type="button" onclick="login()">LOGIN</button>
             <div class="link">
                Not a member?
-               <a href="#">Signup now</a>
+               <a href="../html/Registration.html">Signup now</a>
             </div>
          </form>
       </div>
+      <script>
+         function login() {
+            var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+    
+         // Check if the username and password match the desired values
+         if (username === "client" && password === "client") {
+            // Redirect to the desired page
+            window.location.href = "../html/My Account.html";
+         } else {
+            // Display an error message
+            alert("Invalid username or password. Please try again.");
+         }
+}
+      </script>
    </body>
 </html>
