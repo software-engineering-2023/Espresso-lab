@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account Closure Request Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: red;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      max-width: 500px;
+      padding: 40px;
+      background-color: #333;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-container h2 {
+      color: #f5f5f5;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      color: #f5f5f5;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      box-shadow: 0 0 5px red;
+    }
+
+    button[type="submit"] {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #c70000;
+    }
+
+    .submitted {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function showSubmittedText(event) {
+      event.preventDefault(); // Prevent form submission
+
+      var submittedText = document.getElementById("submitted-text");
+      var form = document.getElementById("account-closure-form");
+      var formElements = form.elements;
+      var isFormValid = true;
+
+      for (var i = 0; i < formElements.length; i++) {
+        var element = formElements[i];
+        if (element.required && element.value.trim() === "") {
+          isFormValid = false;
+          break;
+        }
+      }
+
+      if (isFormValid) {
+        submittedText.style.display = "block";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Account Closure Request Form</h2>
+    <form id="account-closure-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="national-id">National ID:</label>
+        <input type="text" id="national-id" name="national-id" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="account-number">Account Number:</label>
+        <input type="text" id="account-number" name="account-number" required>
+      </div>
+      <div class="form-group">
+        <label for="birth-date">Birth Date:</label>
+        <input type="date" id="birth-date" name="birth-date" required>
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason to Close Account:</label>
+        <select id="reason" name="reason" required>
+          <option value="" disabled selected>Select a reason</option>
+          <option value="dont-need">I don't need it anymore</option>
+          <option value="safety-problems">Safety problems</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button type="submit" onclick="showSubmittedText(event)">Submit</button>
+      <p class="submitted" id="submitted-text">Submitted</p>
+    </form>
+  </div>
+</body>
+</html>

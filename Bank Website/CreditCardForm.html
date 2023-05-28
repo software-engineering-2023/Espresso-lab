@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Issue Request Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: red;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200vh;
+    }
+
+    .form-container {
+      max-width: 500px;
+      padding: 40px;
+      background-color: #333;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-container h2 {
+      color: #f5f5f5;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      color: #f5f5f5;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="date"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group input[type="date"]:focus,
+    .form-group textarea:focus {
+      outline: none;
+      box-shadow: 0 0 5px red;
+    }
+
+    .pdf-field {
+      background-color: #333;
+      color: red;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #c70000;
+    }
+    #submitted-message {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+   <script>
+    function validateForm(event) {
+      event.preventDefault(); // Prevent form submission and page refresh
+
+      var form = document.getElementById("credit-card-form");
+      var inputs = form.querySelectorAll("input, textarea");
+      var isValid = true;
+
+      for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].hasAttribute("required") && inputs[i].value.trim() === "") {
+          isValid = false;
+          break;
+        }
+      }
+
+      if (isValid) {
+        document.getElementById("submitted-message").style.display = "block";
+      }
+
+      return isValid;
+    }
+  </script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Credit Card Issue Request Form</h2>
+    <form id="credit-card-form" onsubmit="validateForm(event)">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="national-id">National ID:</label>
+        <input type="text" id="national-id" name="national-id" required>
+      </div>
+      <div class="form-group">
+        <label for="card-limit">Card Limit:</label>
+        <input type="text" id="card-limit" name="card-limit" required>
+      </div>
+      <div class="form-group">
+        <label for="birth-date">Birth Date:</label>
+        <input type="date" id="birth-date" name="birth-date" required>
+      </div>
+      <div class="form-group">
+        <label for="pdf">PDF Document of Your National ID:</label>
+        <input type="file" id="pdf" name="pdf" accept="application/pdf">
+        <p class="pdf-field">Upload supporting documents</p>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="submitted-message" style="display: none; color: green;">Submitted</div>
+  </div>
+</body>
+</html>
