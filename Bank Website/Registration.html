@@ -30,12 +30,11 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <script>
-        function redirectToURL() {
+        function redirect() {
+          // Redirect to the desired page
           window.location.href = "Login.html";
         }
-      
-        document.getElementById("registerButton").addEventListener("click", redirectToURL);
-      </script>
+      </script> 
 </head>
 
 <body>
@@ -115,14 +114,19 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3"href="Login.html" type="submit" onclick="login()">Register</button>
-                                </div>
+                                    <button id="registerButton" class="btn btn-primary w-100 py-3" type="submit" onclick="redirect()">Register</button>
+
+                                  
+                                    
+                                                        
+                                    </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+   
     <!-- Contact End -->
 
 
@@ -181,7 +185,7 @@
                         &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!--/* This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. */-->
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                     </div>
                 </div>
