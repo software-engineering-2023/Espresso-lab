@@ -29,6 +29,13 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script>
+        function redirectToURL() {
+          window.location.href = "Login.html";
+        }
+      
+        document.getElementById("registerButton").addEventListener("click", redirectToURL);
+      </script>
 </head>
 
 <body>
@@ -44,7 +51,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="Banker.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="mb-0 text-primary text-uppercase"><i class="fa fa-cut me-3"></i>BIB</h1>
+            <h1 class="mb-0 text-primary text-uppercase"><img class="img-fluid w-75 align-self-end" src="img/upperlogo2.png" alt="">BIB</h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -72,7 +79,7 @@
             <div class="row g-0">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="bg-secondary p-5">
-                        <h1 class="text-uppercase mb-4">Login</h1>
+                        <h1 class="text-uppercase mb-4">Registeration</h1>
                         <form>
                             <div class="row g-3">
                                 <div class="col-12">
@@ -89,8 +96,26 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Login</button>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="Name"  placeholder="Subject" required>
+                                        <label for="subject">Name</label>
+                                    </div>
                                 </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control bg-transparent" id="phone"  placeholder="Subject" required>
+                                        <label for="subject">Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control bg-transparent" id="Password"  placeholder="Subject" required>
+                                        <label for="subject">Date of Birth</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button id="registerButton" class="btn btn-primary w-100 py-3" type="submit">Register</button>                               </div>
                             </div>
                         </form>
                     </div>
