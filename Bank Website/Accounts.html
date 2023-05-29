@@ -30,6 +30,16 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    .booot {
+    border-radius: 30px;
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    padding: 10px 15px 10px;
+  }
+</style>
+
 
 <body>
     <!-- Spinner Start -->
@@ -51,30 +61,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="Home.html" class="nav-item nav-link">Home</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="AccountActivity.html" class="dropdown-item">Account Activity</a>
-                        <a href="WhatToDo.html" class="dropdown-item">What Would You Like To Do?</a>
-                        <a href="Reminders.html" class="dropdown-item">Reminders</a>
-                        <a href="MyLoans.html" class="dropdown-item">My Loans</a>
-                        
-                    </div>
+                <a  class="nav-item nav-link"></a>
                 </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Notifications</a>
-                    <div class="dropdown-menu m-0">
-                        <a class="dropdown-item">• Credit Card Issue</a>
-                        <a class="dropdown-item">• New Service unlocked!</a>
-                        <a class="dropdown-item">• 500.00EGP were deducted from your card 23/5/2023 17:23</a>
-                        <a class="dropdown-item">• Technical Issue Resolved</a>
-                        <a class="dropdown-item">• BIB now in Sheikh Zayed!</a>
-                    </div>
-                </div>
-                <a href="Requests.html" class="nav-item nav-link">Requests</a>
+                <a  class="nav-item nav-link"></a>
                
-                <a href="Report.html" class="nav-item nav-link">Report</a>
+                <a  class="nav-item nav-link"></a>
             </div>
             <a href="" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Logout<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -83,94 +74,68 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">What Would You Like To Do?</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center text-uppercase mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Account</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">What Would You Like To Do?</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
     <!-- Page Header End -->
 
 
-    <!-- Team Start -->
+    <!-- Price Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Services</p>
-                
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                
-                            </div>
-                        </div>
-                        <div class="bg-secondary text-center p-4">
-                            <h5 class="text-uppercase"><a href="#">Pay Your Credit</a></h5>
+            <div class="row g-0">
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <h2 class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Requests</h2>
+                        
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h4 class="text-uppercase mb-0">AccountID</h4>
+                                <h4 class="text-uppercase mb-0">Customer Name</h4>
+                                <h4 class="text-uppercase mb-0">Account Type</h4>
+                                <h4 class="text-uppercase mb-0">Actions</h4>
 
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                
+
+                              
+
                             </div>
-                        </div>
-                        <div class="bg-secondary text-center p-4">
-                            <h5 class="text-uppercase"><a href="#">Redeem Your Points</a></h5>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                
-                            </div>
-                        </div>
-                        <div class="bg-secondary text-center p-4">
-                            <h5 class="text-uppercase"><a href="#">Transfer Money</a></h5>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social">
-                                
-                            </div>
-                        </div>
-                        <div class="bg-secondary text-center p-4">
-                            <h5 class="text-uppercase"><a href="#">Set Reminders</a></h5>
-                            
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>  
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <a href="your_page_url_here" class="text-uppercase text-primary"><td><button class="booot">Review</button></td></a>
+                              </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>  
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <a href="your_page_url_here" class="text-uppercase text-primary"><td><button class="booot">Review</button></td></a>
+                              </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>  
+                                <span class="text-uppercase text-primary"></span>
+                                <span class="text-uppercase text-primary"></span>
+                                <a href="your_page_url_here" class="text-uppercase text-primary"><td><button class="booot">Review</button></td></a>
+                              </div>
                         </div>
                     </div>
                 </div>
-                
-                
-                
-                
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    
+                </div>
             </div>
         </div>
     </div>
-    <!-- Team End -->
+    <!-- Price End -->
 
 
     <!-- Footer Start -->
