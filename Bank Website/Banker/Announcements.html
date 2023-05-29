@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #222;
+        color: #fff;
+      }
+
+      .navbar {
+        background-color: #333;
+      }
+
+      .navbar-brand {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .navbar-nav .nav-link {
+        color: #fff;
+      }
+
+      .notification {
+        background-color: #333;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .notification .title {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .notification .content {
+        color: #aaa;
+        font-size: 14px;
+      }
+    </style>
+    <title>Notification Center</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="Banker.html">Banker Dashboard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a class="nav-link" href="CreditCards.html"> Credit Cards </a>
+            </li>
+            <li>
+              <a class="nav-link" href="Accounts.html">Accounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Loans.html">Loans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Announcements.html">Announcements</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <h1 class="mt-4">Notification Center</h1>
+
+      <div class="mt-4">
+        <div class="notification">
+          <div class="title">New Announcement - Maintenance Schedule</div>
+          <div class="content">
+            Dear Bankers,
+            <br />
+            Please be informed that there will be a scheduled maintenance on our
+            banking system on June 5th, 2023, from 10:00 PM to 12:00 AM (UTC).
+            During this time, the system may experience intermittent downtime.
+            We apologize for any inconvenience caused. Thank you for your
+            understanding.
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="title">
+            Important Update - Change in Loan Approval Process
+          </div>
+          <div class="content">
+            Dear Bankers,
+            <br />
+            Effective immediately, we have implemented a new loan approval
+            process. All loan applications must now go through an additional
+            review stage before final approval. This is to ensure compliance
+            with regulatory requirements and mitigate risks. Kindly follow the
+            updated procedures and contact the Loan Department for any
+            questions. Thank you for your cooperation.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
